@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2024-09-25",
+    "amount": "-1000",
+    "description": "Пирожные, торт Наполеон",
+    "is_expense": true
+  },
+  {
+    "date": "2024-09-24",
+    "amount": "+1500",
+    "description": "Трубочки",
+    "is_expense": false
+  },
+  {
+    "date": "2024-09-23",
+    "amount": "-500",
+    "description": "Орехи",
+    "is_expense": true
+  },
+  {
+    "date": "2024-09-22",
+    "amount": "+2000",
+    "description": "Пахлава",
+    "is_expense": false
+  },
+  {
+    "date": "2024-09-21",
+    "amount": "-300",
+    "description": "Пирог",
+    "is_expense": true
+  }
+]
