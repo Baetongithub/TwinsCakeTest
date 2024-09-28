@@ -2,6 +2,7 @@ package kg.twnscake.twinscaketest.presentation.ui.home
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
+import kg.twnscake.twinscaketest.R
 import kg.twnscake.twinscaketest.data.model.BalanceModel
 import kg.twnscake.twinscaketest.data.model.TransactionsModel
 import kg.twnscake.twinscaketest.databinding.FragmentHomeBinding
@@ -45,9 +46,16 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
     }
 
     private fun onItemClick(model: TransactionsModel) {
-        if (model.isExpense){
-            Snackbar.make(this.requireView(), "Покупка в магазине", Snackbar.LENGTH_SHORT).show()
+        if (model.isExpense) {
+            Snackbar.make(
+                this.requireView(),
+                getString(R.string.bought_in_shop),
+                Snackbar.LENGTH_SHORT
+            ).show()
         } else
-            Snackbar.make(this.requireView(), "Пополнение счета", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(
+                this.requireView(),
+                getString(R.string.account_income), Snackbar.LENGTH_SHORT
+            ).show()
     }
 }

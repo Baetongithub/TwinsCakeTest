@@ -2,4 +2,6 @@
     <string name="app_name">Двойняшки</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bought_in_shop">Покупка в магазине</string>
+    <string name="account_income">Пополнение счета</string>
 </resources>
